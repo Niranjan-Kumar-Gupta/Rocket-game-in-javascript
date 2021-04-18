@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: absolute;
+    background-color: rgba(63, 58, 58, 0.548);
+    color: rgb(255, 255, 255);
+    width: 80%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    padding: 15px;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.123);
+}
+.in{
+    transform: translateX(-120%);
+    transition: transform 1s ease-in-out; 
+}
+.container h2{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.container h4{
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+.container h5{
+  margin: 1rem;
+  font-size: 0.8rem;
+}
+.start-btn{
+    margin: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgb(165, 52, 231);
+    color: rgb(255, 255, 255);
+}
+.start-btn:hover{
+    background-color:blueviolet ;
+}
+.start-btn:active{
+    transform: scale(0.95);
+}
+.canvas1{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    background-color: black;
+}
+.arrow {
+    position: absolute;
+    z-index: 99;
+    bottom: 5%;
+    right: 5%;
+    display: block;    
+    transform: translateX(-400%); 
+  }
+  .out{
+    transform: translateX(10%);
+    transition: transform 1s ease-in-out; 
+  }
+  .arrow-btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    color: aliceblue;
+    background: rgba(1, 1, 1, 0.1);
+  }
+  .arrow-btn:hover {
+    background: rgb(2, 0, 8);
+    outline: none;
+  }
+  .arrow-btn:active {
+    transform: scale(0.95);
+    outline: none;
+  }
+  .score{
+    position: absolute;
+    color: rgb(122, 251, 255);
+    z-index: 0;
+    font-size: 16px;
+    margin: 10px;
+    transform: translateX(-100%); 
+  }
+  .scoreOut{
+    z-index: 100;
+    transform: translateX(0%);
+    transition: transform 1s ease-in-out; 
+  }
+  #gameOver{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    left: 15%;
+    top: 40%;
+    font-size: 26px;
+    margin: 10px;
+  }
